@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find ur_e_description)/urdf/ur.transmission.xacro" />
-  <xacro:include filename="$(find ur_e_description)/urdf/ur.gazebo.xacro" />
+<!-- ** modified by Georg John ** -->
 
   <xacro:macro name="cylinder_inertial" params="radius length mass *origin">
     <inertial>
@@ -354,21 +353,6 @@
         <origin rpy="0 0 0" xyz="-0.01 0 0"/>
       </collision>
     </link>
-
-    <xacro:ur_arm_transmission prefix="${prefix}" />
-    <xacro:ur_arm_gazebo prefix="${prefix}" />
-
-    <!-- ROS base_link to UR 'Base' Coordinates transform -->
-    <link name="${prefix}base"/>
-    <joint name="${prefix}base_link-base_fixed_joint" type="fixed">
-      <!-- NOTE: this rotation is only needed as long as base_link itself is
-                 not corrected wrt the real robot (ie: rotated over 180
-                 degrees)
-      -->
-      <origin xyz="0 0 0" rpy="0 0 ${-pi}"/>
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}base"/>
-    </joint>
 
     <!-- Frame coincident with all-zeros TCP on UR controller -->
     <link name="${prefix}tool0"/>
