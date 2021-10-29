@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>universal_robot_urdf_wrapper</name>
+  <version>0.0.0</version>
+  <description>
+    The universal_robot_urdf_wrapper package:
+    Useful to create URDF files of the arm descriptions from the Universal Robot package.
+    - For example if you want to load URx-arms in simulators like PyBullet, MuJoCo etc.
+  </description>
+
+  <maintainer email="georg.john.work@gmail.com">Georg John</maintainer>
+  <author email="georg.john.work@gmail.com">Georg John</author>
+
+  <license>BDS</license>
+
+  <!-- Should be added if a public repository exists -->
+  <!-- <url type="website">http://wiki....</url> -->
+
+  <!-- dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+
+</package>
