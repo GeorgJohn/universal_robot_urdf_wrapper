@@ -12,9 +12,8 @@
   <author email="georg.john.work@gmail.com">Georg John</author>
 
   <license>BDS</license>
-
-  <!-- Should be added if a public repository exists -->
-  <!-- <url type="website">http://wiki....</url> -->
+  
+  <url type="website">https://github.com/GeorgJohn/universal_robot_urdf_wrapper/wiki</url>
 
   <!-- dependencies -->
   <buildtool_depend>catkin</buildtool_depend>
