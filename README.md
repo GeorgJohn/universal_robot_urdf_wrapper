@@ -4,11 +4,12 @@ Goal of this package is to create URDF files of the URx and URxe arms for using 
 
 
 
-Tested under:
+## Procedure
+
+The procedure is tested under:
 
 - Ubuntu 20.04
 - ROS noetic installation
-
 
 
 To create the new data model, proceed as follows:
